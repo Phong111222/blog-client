@@ -1,0 +1,40 @@
+.DropDown_Item {
+  top: 90px !important;
+}
+.PostCard {
+  .UserAction {
+    button {
+      opacity: 0;
+      border: none;
+      outline: none;
+      background: rgba(140, 140, 140, 0.2);
+      z-index: 999;
+    }
+    .delete {
+      &:hover {
+        background: rgba(202, 67, 14, 0.959);
+      }
+    }
+    .edit {
+      &:hover {
+        background: #40a9ff;
+      }
+    }
+  }
+  &:hover {
+    .UserAction {
+      button {
+        opacity: 1;
+      }
+    }
+  }
+  .YourPost {
+    button {
+      background: rgba(82, 199, 82, 0.925);
+      color: white;
+      &:hover {
+        border-color: rgba(82, 199, 82, 0.925);
+      }
+    }
+  }
+}
